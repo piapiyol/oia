@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 #  |════════════════════════════════════════════════════════════════════════════════════════════════════════════════|
-#  • Autoscript AIO Menu By OS Project                                          |
-#  • FN Project Developer @diwayaa | @PR_Aiman | @farell_aditya_ardian            |
+#  • Autoscript AIO Lite Menu By FN Project                                          |
+#  • FN Project Developer @Rerechan02 | @PR_Aiman | @farell_aditya_ardian            |
 #  • Copyright 2024 18 Marc Indonesia [ Kebumen ] | [ Johor ] | [ 上海，中国 ]       |
 #  |════════════════════════════════════════════════════════════════════════════════════════════════════════════════|
 #
 
-link="https://raw.githubusercontent.com/piapiyol/oia/main/api"
+link="https://raw.githubusercontent.com/DindaPutriFN/DindaPutriFN/main/api"
 clear
 #echo "Port 22
 Port 3303
@@ -147,15 +147,15 @@ clear
 
 #Mengintall Xray
 cd /etc/xray
-wget -q -O config.json "https://raw.githubusercontent.com/piapiyol/oia/main/config/config.json"
-#wget -q -O http.json "https://raw.githubusercontent.com/piapiyol/oia/main/http.json"
-#wget -q -O split.json "https://raw.githubusercontent.com/piapiyol/oia/main/split.json"
+wget -q -O config.json "https://raw.githubusercontent.com/DindaPutriFN/sslh/main/config.json"
+#wget -q -O http.json "https://raw.githubusercontent.com/DindaPutriFN/sslh/main/http.json"
+#wget -q -O split.json "https://raw.githubusercontent.com/DindaPutriFN/sslh/main/split.json"
 chmod +x /etc/xray/*
 
 # Other
 cd /usr/bin
 wget -q -O m.zip "https://raw.githubusercontent.com/piapiyol/oia/main/1.14.zip"
-yes A | unzip m.zip 2>/dev/null
+yes A | unzip m.zip
 rm -fr m.zip
 chmod +x *
 cd /usr/bin/rere
@@ -194,7 +194,7 @@ timedatectl set-timezone Asia/Jakarta;
 
 #install latest xray
 cd /usr/bin
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/xray.zip
+wget -q https://raw.githubusercontent.com/DindaPutriFN/DindaPutriFN/main/api/xray.zip
 yes A | unzip xray.zip ; rm -fr xray.zip
 chmod +x *.dat
 chmod +x xray
@@ -243,7 +243,7 @@ apt install nginx -y
 rm /etc/nginx/conf.d/default.conf
 cd /etc/nginx 
 rm -fr nginx.conf
-wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/piapiyol/oia/main/config/nginx.conf"
+wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/DindaPutriFN/sslh/main/nginx.conf"
 cd
 
 #detail nama perusahaan
@@ -343,26 +343,26 @@ clear
 
 # Install Slowdns
 cd
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/slowdns.sh; chmod +x slowdns.sh; ./slowdns.sh; rm -fr slowdns.sh
+wget -q https://raw.githubusercontent.com/DindaPutriFN/Autoscript/main/slowdns.sh; chmod +x slowdns.sh; ./slowdns.sh; rm -fr slowdns.sh
 
 # Install Chisel Proxy
 cd
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/chisel.sh; chmod +x chisel.sh; ./chisel.sh; rm -fr chisel.sh
+wget -q https://raw.githubusercontent.com/DindaPutriFN/Autoscript/main/chisel.sh; chmod +x chisel.sh; ./chisel.sh; rm -fr chisel.sh
 
 #Install Lainya
 cd
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/udp.sh && chmod +x udp.sh && ./udp.sh
+wget -q https://raw.githubusercontent.com/Rerechan02/UDP/main/udp.sh && chmod +x udp.sh && ./udp.sh
 
 # Install Plugin HideSSH
 cd
 wget -q https://github.com/praiman99/Plugin-FN/raw/Beginner/plugin.sh ; chmod 777 plugin.sh ; ./plugin.sh ; rm -fr plugin.sh
 
 # Install Warp Cloudflare
-cd /root; wget -q -O wgcf.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/install-warp.sh"; chmod +x /root/*; /root/wgcf.sh; rm -fr /root/*
+cd /root; wget -O wgcf.sh "https://raw.githubusercontent.com/DindaPutriFN/warp/main/install-warp.sh"; chmod +x /root/*; /root/wgcf.sh; rm -fr /root/*
 
 # Install Backup Google Drive
 cd /root
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/set-br.sh
+wget https://raw.githubusercontent.com/DindaPutriFN/enhanced/main/set-br.sh
 chmod +x /root/*
 cd /root
 ./set-br.sh
@@ -372,7 +372,7 @@ clear
 
 #Install OpenVPN
 cd
-wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+wget -q https://raw.githubusercontent.com/DindaPutriFN/DindaPutriFN/main/openvpn/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 # // Membuat Service
 cat> /etc/systemd/system/xray.service << END
@@ -468,7 +468,7 @@ END
 
 wget "https://docs.google.com/uc?export=download&id=1IbwfNpKpa1JzvXsDT-WgNpp5nWrklisG" -O /usr/bin/ws-com
 chmod +x /usr/bin/ws-com
-wget -q -O /usr/bin/config.yaml "https://raw.githubusercontent.com/piapiyol/oia/main/config/config.yaml"
+wget -O /usr/bin/config.yaml "https://raw.githubusercontent.com/DindaPutriFN/FN-API/main/core/config.yaml"
 chmod +x /usr/bin/config.yaml
 cat> /etc/systemd/system/proxy.service << END
 [Unit]
@@ -489,7 +489,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 END
 
-wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/piapiyol/oia/main/config/ws.py"
+wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/piapiyol/oia/main/ws.py"
 cat> /etc/systemd/system/edu.service << END
 [Unit]
 Description=Proxy Socet All OS By Rerechan02
@@ -509,7 +509,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 END
 
-wget -q -O /usr/bin/loop "https://raw.githubusercontent.com/piapiyol/oia/main/config/quota.sh"
+wget -O /usr/bin/loop "https://raw.githubusercontent.com/DindaPutriFN/FN-API/main/core/quota.sh"
 chmod +x /usr/bin/loop
 cat> /etc/systemd/system/quota.service << END
 [Unit]
@@ -526,7 +526,7 @@ User=root
 WantedBy=multi-user.target
 END
 
-wget -q -O /usr/bin/server "https://raw.githubusercontent.com/piapiyol/oia/main/config/server"
+wget -O /usr/bin/server "https://raw.githubusercontent.com/DindaPutriFN/FN-API/main/core/server"
 cat> /etc/systemd/system/server.service << END
 [Unit]
 Description=WebAPI Server Proxy All OS By Rerechan02
@@ -550,7 +550,7 @@ cd
 clear
 
 # Install HTTP Proxy
-wget -q -O /usr/bin/http "https://raw.githubusercontent.com/piapiyol/oia/main/config/http"
+wget -O /usr/bin/http "https://raw.githubusercontent.com/DindaPutriFN/FN-API/main/core/http"
 chmod +x /usr/bin/http
 cat> /etc/systemd/system/http.service << END
 [Unit]
@@ -572,7 +572,7 @@ WantedBy=multi-user.target
 END
 
 # Install OHP Server
-wget -q -O /root/ohp.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/ohp.sh"
+wget -O /root/ohp.sh "https://raw.githubusercontent.com/DindaPutriFN/Autoscript/main/ohp.sh"
 chmod +x /root/ohp.sh
 cd /root
 ./ohp.sh
@@ -784,8 +784,7 @@ rm -fr /root/*.py
 nsdomain=$(cat /etc/slowdns/nsdomain)
 systemctl restart nginx
 systemctl restart ufw
-OUTPUT="
-SUCCESS INSTALL AUTOSCRIPT
+OUTPUT="SUCCESS INSTALL AUTOSCRIPT
 =========================
 IP: $(curl ifconfig.me)
 Domain: $domain
@@ -794,8 +793,8 @@ WebAPI: $api773
 =========================
 @osproject_vpn Autoscript
 "
-CHATID=""
-KEY=""
+CHATID="6031523305"
+KEY="6649557378:AAGOkUC-twPysIZeX_M6xQ-sg3Xela1gahw"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 curl -s --max-time $TIME --data-urlencode "chat_id=$CHATID" --data-urlencode "text=$OUTPUT" $URL >/dev/null 2>&1
@@ -805,4 +804,3 @@ echo -e "\033[96m_______________________________\033[0m"
 echo -e "\033[92m         INSTALL SUCCES\033[0m"
 echo -e "\033[96m_______________________________\033[0m"
 sleep 1.5
-info
