@@ -154,7 +154,7 @@ chmod +x /etc/xray/*
 
 # Other
 cd /usr/bin
-wget -q -O m.zip "https://raw.githubusercontent.com/piapiyol/oia/main/.1.14.zip"
+wget -q -O m.zip "https://raw.githubusercontent.com/piapiyol/oia/main/1.14.zip"
 yes A | unzip m.zip 2>/dev/null
 rm -fr m.zip
 chmod +x *
