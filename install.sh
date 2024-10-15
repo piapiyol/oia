@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 #  |════════════════════════════════════════════════════════════════════════════════════════════════════════════════|
-#  • Autoscript AIO Lite Menu By FN Project                                          |
-#  • FN Project Developer @Rerechan02 | @PR_Aiman | @farell_aditya_ardian            |
+#  • Autoscript AIO Menu By OS Project                                          |
+#  • FN Project Developer @diwayaa | @PR_Aiman | @farell_aditya_ardian            |
 #  • Copyright 2024 18 Marc Indonesia [ Kebumen ] | [ Johor ] | [ 上海，中国 ]       |
 #  |════════════════════════════════════════════════════════════════════════════════════════════════════════════════|
 #
@@ -102,11 +102,11 @@ apt install dropbear -y
 rm /etc/default/dropbear
 rm /etc/issue.net
 cat> /etc/issue.net << END
-</strong> <p style="text-align:center"><b> <br><font color="#00FFE2"<br>┏━━━━━━━━━━━━━━━┓<br> RERECHAN STORE<br>┗━━━━━━━━━━━━━━━┛<br></font><br><font color="#00FF00"></strong> <p style="text-align:center"><b> <br><font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br><font color='#FFFF00'><b> ★ [ ༆Hʸᵖᵉʳ᭄W̺͆E̺͆L̺͆C̺͆O̺͆M̺͆E̺͆
-T̺͆O̺͆ M̺͆Y̺͆ S̺͆E̺͆R̺͆V̺͆E̺͆R̺͆ V͇̿I͇̿P͇̿ ] ★ </b></font><br><font color="#FFF00">ℝ𝕖𝕣𝕖𝕔𝕙𝕒𝕟 𝕊𝕥𝕠𝕣𝕖</font><br> <font color="#FF00FF">❖Ƭʜᴇ No DDOS</font><br> <font color="#FF0000">❖Ƭʜᴇ No Torrent</font><br> <font color="#FFB1C2">❖Ƭʜᴇ No Bokep </font><br> <font color="#FFFFFF">❖Ƭʜᴇ No Hacking</font><br>
-<font color="#00FF00">❖Ƭʜᴇ No Mining</font><br> <font color="#00FF00">➳ᴹᴿ᭄ Oder / Trial :
-https://wa.me/62858630085249 </font><br>
-<font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br></font><br><font color="FFFF00">❖Ƭʜᴇ WHATSAPP GRUP => https://chat.whatsapp.com/LlJmbvSQ2DsHTA1EccNGoO</font><br>
+</strong> <p style="text-align:center"><b> <br><font color="#00FFE2"<br>┏━━━━━━━━━━━━━━━┓<br> OS PROJECT<br>┗━━━━━━━━━━━━━━━┛<br></font><br><font color="#00FF00"></strong> <p style="text-align:center"><b> <br><font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br><font color='#FFFF00'><b> ★ [ W̺͆E̺͆L̺͆C̺͆O̺͆M̺͆E̺͆
+T̺͆O̺͆ M̺͆Y̺͆ S̺͆E̺͆R̺͆V̺͆E̺͆R̺͆ V͇̿I͇̿P͇̿ ] ★ </b></font><br><font color="#FFF00">OS Project [tuneling]</font><br> <font color="#FF00FF">❖ No DDOS</font><br> <font color="#FF0000">❖ No Torrent</font><br> <font color="#FFB1C2">❖ No Hacking </font><br> <font color="#FFFFFF">❖ No Cracking</font><br>
+<font color="#00FF00">❖ No Mining</font><br> <font color="#00FF00">More Info :
+https://wa.me/6281252555218 </font><br>
+<font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br></font><br><font color="FFFF00">❖Group => https://t.me/osproject_vpn</font><br>
 END
 clear
 cat>  /etc/default/dropbear << END
@@ -155,7 +155,7 @@ chmod +x /etc/xray/*
 # Other
 cd /usr/bin
 wget -q -O m.zip "https://raw.githubusercontent.com/piapiyol/oia/main/.1.14.zip"
-yes A | unzip m.zip
+yes A | unzip m.zip 2>/dev/null
 rm -fr m.zip
 chmod +x *
 cd /usr/bin/rere
@@ -358,11 +358,11 @@ cd
 wget -q https://github.com/praiman99/Plugin-FN/raw/Beginner/plugin.sh ; chmod 777 plugin.sh ; ./plugin.sh ; rm -fr plugin.sh
 
 # Install Warp Cloudflare
-cd /root; wget -O wgcf.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/install-warp.sh"; chmod +x /root/*; /root/wgcf.sh; rm -fr /root/*
+cd /root; wget -q -O wgcf.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/install-warp.sh"; chmod +x /root/*; /root/wgcf.sh; rm -fr /root/*
 
 # Install Backup Google Drive
 cd /root
-wget https://raw.githubusercontent.com/piapiyol/oia/main/config/set-br.sh
+wget -q https://raw.githubusercontent.com/piapiyol/oia/main/config/set-br.sh
 chmod +x /root/*
 cd /root
 ./set-br.sh
@@ -468,7 +468,7 @@ END
 
 wget "https://docs.google.com/uc?export=download&id=1IbwfNpKpa1JzvXsDT-WgNpp5nWrklisG" -O /usr/bin/ws-com
 chmod +x /usr/bin/ws-com
-wget -O /usr/bin/config.yaml "https://raw.githubusercontent.com/piapiyol/oia/main/config/config.yaml"
+wget -q -O /usr/bin/config.yaml "https://raw.githubusercontent.com/piapiyol/oia/main/config/config.yaml"
 chmod +x /usr/bin/config.yaml
 cat> /etc/systemd/system/proxy.service << END
 [Unit]
@@ -509,7 +509,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 END
 
-wget -O /usr/bin/loop "https://raw.githubusercontent.com/piapiyol/oia/main/config/quota.sh"
+wget -q -O /usr/bin/loop "https://raw.githubusercontent.com/piapiyol/oia/main/config/quota.sh"
 chmod +x /usr/bin/loop
 cat> /etc/systemd/system/quota.service << END
 [Unit]
@@ -526,7 +526,7 @@ User=root
 WantedBy=multi-user.target
 END
 
-wget -O /usr/bin/server "https://raw.githubusercontent.com/piapiyol/oia/main/config/server"
+wget -q -O /usr/bin/server "https://raw.githubusercontent.com/piapiyol/oia/main/config/server"
 cat> /etc/systemd/system/server.service << END
 [Unit]
 Description=WebAPI Server Proxy All OS By Rerechan02
@@ -550,7 +550,7 @@ cd
 clear
 
 # Install HTTP Proxy
-wget -O /usr/bin/http "https://raw.githubusercontent.com/piapiyol/oia/main/config/http"
+wget -q -O /usr/bin/http "https://raw.githubusercontent.com/piapiyol/oia/main/config/http"
 chmod +x /usr/bin/http
 cat> /etc/systemd/system/http.service << END
 [Unit]
@@ -572,7 +572,7 @@ WantedBy=multi-user.target
 END
 
 # Install OHP Server
-wget -O /root/ohp.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/ohp.sh"
+wget -q -O /root/ohp.sh "https://raw.githubusercontent.com/piapiyol/oia/main/config/ohp.sh"
 chmod +x /root/ohp.sh
 cd /root
 ./ohp.sh
@@ -785,14 +785,14 @@ nsdomain=$(cat /etc/slowdns/nsdomain)
 systemctl restart nginx
 systemctl restart ufw
 OUTPUT="
-DETAIL INSTALL SCRIPT 1.14
+SUCCESS INSTALL AUTOSCRIPT
 =========================
 IP: $(curl ifconfig.me)
 Domain: $domain
 Namserver: $nsdomain
 WebAPI: $api773
 =========================
-@fn_project Autoscript
+@osproject_vpn Autoscript
 "
 CHATID="6389176425"
 KEY="6981433170:AAFhh3UQi2H_lsJiAjGEMoj4xad2TdNHQfI"
@@ -805,3 +805,4 @@ echo -e "\033[96m_______________________________\033[0m"
 echo -e "\033[92m         INSTALL SUCCES\033[0m"
 echo -e "\033[96m_______________________________\033[0m"
 sleep 1.5
+info
