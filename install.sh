@@ -102,11 +102,11 @@ apt install dropbear -y
 rm /etc/default/dropbear
 rm /etc/issue.net
 cat> /etc/issue.net << END
-</strong> <p style="text-align:center"><b> <br><font color="#00FFE2"<br>┏━━━━━━━━━━━━━━━┓<br> OS PROJECT<br>┗━━━━━━━━━━━━━━━┛<br></font><br><font color="#00FF00"></strong> <p style="text-align:center"><b> <br><font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br><font color='#FFFF00'><b> ★ [ W̺͆E̺͆L̺͆C̺͆O̺͆M̺͆E̺͆
-T̺͆O̺͆ M̺͆Y̺͆ S̺͆E̺͆R̺͆V̺͆E̺͆R̺͆ V͇̿I͇̿P͇̿ ] ★ </b></font><br><font color="#FFF00">OS Project [tuneling]</font><br> <font color="#FF00FF">❖ No DDOS</font><br> <font color="#FF0000">❖ No Torrent</font><br> <font color="#FFB1C2">❖ No Hacking </font><br> <font color="#FFFFFF">❖ No Cracking</font><br>
-<font color="#00FF00">❖ No Mining</font><br> <font color="#00FF00">More Info :
-https://wa.me/6281252555218 </font><br>
-<font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br></font><br><font color="FFFF00">❖Group => https://t.me/osproject_vpn</font><br>
+</strong> <p style="text-align:center"><b> <br><font color="#00FFE2"<br>┏━━━━━━━━━━━━━━━┓<br> RERECHAN STORE<br>┗━━━━━━━━━━━━━━━┛<br></font><br><font color="#00FF00"></strong> <p style="text-align:center"><b> <br><font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br><font color='#FFFF00'><b> ★ [ ༆Hʸᵖᵉʳ᭄W̺͆E̺͆L̺͆C̺͆O̺͆M̺͆E̺͆
+T̺͆O̺͆ M̺͆Y̺͆ S̺͆E̺͆R̺͆V̺͆E̺͆R̺͆ V͇̿I͇̿P͇̿ ] ★ </b></font><br><font color="#FFF00">ℝ𝕖𝕣𝕖𝕔𝕙𝕒𝕟 𝕊𝕥𝕠𝕣𝕖</font><br> <font color="#FF00FF">❖Ƭʜᴇ No DDOS</font><br> <font color="#FF0000">❖Ƭʜᴇ No Torrent</font><br> <font color="#FFB1C2">❖Ƭʜᴇ No Bokep </font><br> <font color="#FFFFFF">❖Ƭʜᴇ No Hacking</font><br>
+<font color="#00FF00">❖Ƭʜᴇ No Mining</font><br> <font color="#00FF00">➳ᴹᴿ᭄ Oder / Trial :
+https://wa.me/62858630085249 </font><br>
+<font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br></font><br><font color="FFFF00">❖Ƭʜᴇ WHATSAPP GRUP => https://chat.whatsapp.com/LlJmbvSQ2DsHTA1EccNGoO</font><br>
 END
 clear
 cat>  /etc/default/dropbear << END
@@ -489,7 +489,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 END
 
-wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/piapiyol/oia/main/ws.py"
+wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/DindaPutriFN/WebSocket-Proxy/main/ws.py"
 cat> /etc/systemd/system/edu.service << END
 [Unit]
 Description=Proxy Socet All OS By Rerechan02
@@ -784,17 +784,18 @@ rm -fr /root/*.py
 nsdomain=$(cat /etc/slowdns/nsdomain)
 systemctl restart nginx
 systemctl restart ufw
-OUTPUT="SUCCESS INSTALL AUTOSCRIPT
+OUTPUT="
+DETAIL INSTALL SCRIPT 1.14
 =========================
 IP: $(curl ifconfig.me)
 Domain: $domain
 Namserver: $nsdomain
 WebAPI: $api773
 =========================
-@osproject_vpn Autoscript
+@fn_project Autoscript
 "
-CHATID="6031523305"
-KEY="6649557378:AAGOkUC-twPysIZeX_M6xQ-sg3Xela1gahw"
+CHATID="6389176425"
+KEY="6981433170:AAFhh3UQi2H_lsJiAjGEMoj4xad2TdNHQfI"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 curl -s --max-time $TIME --data-urlencode "chat_id=$CHATID" --data-urlencode "text=$OUTPUT" $URL >/dev/null 2>&1
