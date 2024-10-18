@@ -7,7 +7,6 @@
 #  |════════════════════════════════════════════════════════════════════════════════════════════════════════════════|
 #
 
-link="https://raw.githubusercontent.com/DindaPutriFN/DindaPutriFN/main/api"
 clear
 #echo "Port 22
 Port 3303
@@ -489,7 +488,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 END
 
-wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/DindaPutriFN/WebSocket-Proxy/main/ws.py"
+wget -q -O /usr/bin/ws "https://raw.githubusercontent.com/piapiyol/oia/main/config/ws.py"
 cat> /etc/systemd/system/edu.service << END
 [Unit]
 Description=Proxy Socet All OS By Rerechan02
